@@ -126,8 +126,7 @@ The Reflection tab was an empty placeholder; the dictation supplied the user's o
 > Love it. Close the problem and start problem 11. Its title is Submit to GitHub. Um, after we're done, we'll push uh, the code to a public GitHub repo so creators can clone it. Um, the URL should be in the output folder under GitHub underscore URL dot txt. Please, as we've always discussed, do not push real.env to the GitHub repo. And um, please include both database files under the data folder so the app can run easily. I'll give you a screenshot of the expected file layout. And if you don't have anything in the in the layout, please, please, please let me know. And do not invent anything. We'll, we'll need to build it from scratch. Um, the README file should explain uh, uh, how to copy the original database to the working copy when you need a clean run, uh, start the MCP server, start fast API backend, start the React board, and reset the database, database sorry, before a full three-ticket run. And that's about it. Um, obviously, before submitting, please check with me. And before we do it, please give me an overview if everything if everything looks right. And and finally, when you when I give your approval, please push to GitHub and, and give me a, give me the URL.
 
 **Follow-up (refinement) prompt:**
-> _(pending)_
+> Yeah, obviously switch to relative paths uh, in the mcp.json. Uh, and for point number four, yeah, if you if you have it unzipped from the original download, that's correct. But just make sure that the original database we downloaded is there. Um, uh, commit it like like it is in number point number five, and yeah, that's it. And call the repo homework 5 inigo or something like that.
 
 **What was lacking before refinement:**
-_(pending)_
-
+The first pass had `.mcp.json` with absolute paths to the user's own machine (not usable by anyone cloning a public repo), no confirmed name for the repo, and no decision on the zip or the working database; this prompt set relative paths, a verified original database, the committed working copy as-is, and the repo name `homework-5-inigo`.
