@@ -80,10 +80,10 @@ The plan existed only as a chat overview of the tickets; there was no written, p
 > Great, mate. Love it. Okay, so uh, I think everything looks correct now. We'll close problem six and start problem seven. Its title is Backend Routes. In the next problem, we'll do a React front-end dashboard, and this will obviously need will need a backend that it can call. Um, within the backend folder in main.py, please use fast API to add routes to do the following. First, we'll need to return the three tickets and whether each is open or resolved. Obviously use the sort of different parameters we've all, already set. Second, we'll take a ticket ID and run our, our agent team on that ticket. Third, um, we'll need to return recent agent events. And what I mean by this is what each agent said and which tools they used. So the board can refresh. Four, we'll need to approve a payment or purchase after a human clicks approve. As we said before, agents will only prepare the pay, and this route is what actually changes the cash in, in reality, obviously, but also in the database. Five, return the current checking balance from cash underscore accounts. And six, reset the database to original values when we want to try a fresh run. Um, once I'm done with dictating what I need from you, from the backend folder, the server will need to start with the terminal um, command that I will paste as, a, as soon as I'm done. Um, In summary, what this terminal call will do is turn on my backend at uh, localhost 80,000 so the front-end dashboard can call these routes. Finally, in output uh, folder within harness.md, please list each route in one line. Um, so what URL and what each URL does. Um, I'll stop dictating now and give you the command. uvicorn main:app --reload --port 8000
 
 **Follow-up (refinement) prompt:**
-> _(pending)_
+> Hold your horses, man. I didn't ask you to test the tickets just to set the route. So for now, just avoid doing the tests already. Um, and please um, sort of reverse everything that had to do with the, the test run itself. So if you wrote sort of like what the agents did or whatever, or you updated the HTML, please, please reverse that.
 
 **What was lacking before refinement:**
-_(pending)_
+The first pass went beyond the brief: it ran the agent team on ticket 102 and approved a real payment through the new routes, adding test results to the audit trail and the harness. The refinement limited the problem to building the routes and had every trace of that test run removed.
 
 ## Problem 8: Agent Dashboard
 
@@ -91,10 +91,10 @@ _(pending)_
 > Okay, sounds okay. Uh, close problem seven then, and we'll start problem eight. Problem eight is called agent dashboard. Um, so what we'll do is we'll build the front-end dashboard in the front-end folder with React plus Vite plus TypeScript. Vite. V-I-T-E, Vite. The page should call the routes we built in problem seven. At minimum, the board should show the list of all three tickets. Um, it should let us pick one ticket and start the agent in Monet, show which agent and what they're saying or doing while the ticket runs, mark a ticket as resolved when the run finishes, be able to show a short summary of what each agent did on that ticket, let a human approve a payer purchase when asked, and show the checking balance. Um, obviously, the balance should drop after an approved pay. Make the dashboard look good. And we... we I would like it to, to look like extremely futuristic. So imagine having like the setup of the future, you know, like if you were the boss of the future, you would have this sort of panel, for example. Um, the front end should talk to the back end at the localhost 8000. And on the back end, we should allow the Vite page origin, usually localhost 5173. So the browser is allowed to call those, those routes. Um, the board should start with the terminal command I'll paste as soon as I'm done uh, dictating the instructions to you. And um, what this terminal command does is open the React desk in, in the browser so we can pick tickets and watch agents. Finally, we'll route, write um, design.md in the output folder with what we cho- chose for the dashboard dashboard loop. Include, please, layout, how agents, agents read differently, how resolve tickets and cash show up, and why. Include the creative choices that make it feel special and something humans would actually enjoy using. npm run dev
 
 **Follow-up (refinement) prompt:**
-> _(pending)_
+> You gave me a lot of output. Please summarize it and tell me if I need to be mindful about anything or just need to check. Uh, explain to me what the TSX files do also, please.
 
 **What was lacking before refinement:**
-_(pending)_
+The dashboard hand-off was a long, detailed report with no clear list of what the user needed to watch out for, and it didn't explain what each React `.tsx` file does.
 
 ## Problem 9: Resolve the Tickets
 
